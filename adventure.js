@@ -1,4 +1,4 @@
-//Add Backgroumd Music to the game
+//Backgroumd music for the game
 function playAudio(){
 	audio.play()
 	var audio = document.getElementById("mySound");
@@ -13,18 +13,18 @@ var userX = 0
 var userY = 0
 
 //Hide the treasure also with x y values
-var treasureX = 2
-var treasureY = 1
+var randomLoc = Math.floor(Math.random() * 4)
+var treasureX = randomLoc
+var treasureY = randomLoc + 1
 
 //Flag that controls loop
 var treasureFound = false
 
 //Get user's name
-var name = prompt("Welcome brave adventurer! What are you called?")
-
+//var name = prompt("Welcome brave adventurer! What are you called?")
 
 while(!treasureFound) {
-	var direction = prompt("Which direction would you like to go in? (North, South, East, or West)")
+//	var direction = prompt("Which direction would you like to go in? (North, South, East, or West)")
 	
 	console.log(direction)
 	
