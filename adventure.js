@@ -13,7 +13,7 @@ var userX = 0
 var userY = 0
 
 //Hide the treasure also with x y values
-var randomLoc = Math.floor(Math.random() * 4)
+var randomLoc = Math.floor(Math.random() * 3)
 var treasureX = randomLoc
 var treasureY = randomLoc + 1
 
@@ -22,9 +22,10 @@ var treasureFound = false
 
 //Get user's name
 //var name = prompt("Welcome brave adventurer! What are you called?")
+	console.log("Hello and welcome to Adventure Land " + name)
 
 while(!treasureFound) {
-//	var direction = prompt("Which direction would you like to go in? (North, South, East, or West)")
+//	var direction = prompt("Which direction would you like to go in? (north, south, east, or west)")
 	
 	console.log(direction)
 	
@@ -37,7 +38,7 @@ while(!treasureFound) {
 	//check if new user location is valid
 	//check if new user location is treasure
 	
-	if(direction == "North"){
+	if(direction == "north"){
 		newX = userX
 		newY = userY + 1
 		//neither value < 0, neither is > max
@@ -50,7 +51,7 @@ while(!treasureFound) {
 			console.log("There is a forbidding mountain range in that direction, you cannot go.")
 		}
 		
-	}else if(direction == "East"){
+	}else if(direction == "east"){
 		newX = userX + 1
 		newY = userY
 		//neither value < 0, neither is > max
@@ -61,7 +62,7 @@ while(!treasureFound) {
 			console.log("There is a forbidding mountain range in that direction, you cannot go.")
 		}
 	
-	}else if(direction == "South"){
+	}else if(direction == "south"){
 		newX = userX
 		newY = userY - 1
 		//neither value < 0, neither is > max
@@ -72,7 +73,7 @@ while(!treasureFound) {
 			console.log("There is a forbidding mountain range in that direction, you cannot go.")
 		}
 	
-	}else if(direction == "West"){
+	}else if(direction == "west"){
 		newX = userX - 1
 		newY = userY
 		//neither value < 0, neither is > max
@@ -91,7 +92,7 @@ while(!treasureFound) {
 	
 		//see if user location matches treasure 
 		if(userX == treasureX && userY == treasureY){
-			console.log("You found the treaseure!")
+			console.log("You found the treaseure " + name + "!")
 			treasureFound = true
 		}				
 }

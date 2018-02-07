@@ -21,14 +21,11 @@ h1 {
 	animation-duration: 4s;
 }
 
-@-webkit-keyframes header {
+@keyframes header {
 	from {background-color: #cc9900;}
 	to {background-color: #ffd24d;}
 }
-@keyfames header {
-	from {background-color: #cc9900;}
-	to {background-color: #ffd24d;}
-}
+
 
 audio {
 	display: inline-block;
