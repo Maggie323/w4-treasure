@@ -1,34 +1,43 @@
+
+/*This is mainly to target the background image*/
 body {
-	background-image: url(../media/rabbit-hole.jpg);
+	background-image: url(../media/treasure.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Berkshire Swash', cursive;
 }
 
-.mySound {
-	align-content: flex-end;
-}
-h1 {
-	color: antiquewhite;
+h1,p {
+	color:  #ffbf00;
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+}
+p {
+	font-size: 28px;
+	padding: 3rem;
+}
+
+	/*CSS Animation	*/
+h1 {
 	-webkit-animation-name:header;
 	-webkit-animation-duration: 4s;
 	animation-name: header;
 	animation-duration: 4s;
 }
-
 @keyframes header {
 	from {background-color: #cc9900;}
 	to {background-color: #ffd24d;}
 }
 
-
+/*Audio for background music*/
+.mySound {
+	align-content: flex-end;
+}
 audio {
 	display: inline-block;
 	height: 10%;
 	align-content: stretch;
+	width: 100%;
 }

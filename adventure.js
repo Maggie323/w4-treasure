@@ -21,11 +21,11 @@ var treasureY = randomLoc + 1
 var treasureFound = false
 
 //Get user's name
-//var name = prompt("Welcome brave adventurer! What are you called?")
+var name = prompt("Welcome brave adventurer! What are you called?")
 	console.log("Hello and welcome to Adventure Land " + name)
 
 while(!treasureFound) {
-//	var direction = prompt("Which direction would you like to go in? (north, south, east, or west)")
+	var direction = prompt("Which direction would you like to go in? (north, south, east, or west)")
 	
 	console.log(direction)
 	
