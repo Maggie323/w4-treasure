@@ -4,19 +4,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>Let's Adventure</title>
-	
-<!--	Meyer's Reset-->
-	<link rel="stylesheet" href="styles/meyer-reset.css">
-	
+		
 <!--	Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	
+<!--	Font Awesome-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	
 <!--	Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<!--	CSS Stylessheet-->
+<!--	Main CSS Stylessheet-->
 	<link rel="stylesheet" href="styles/stylessheet.css">
-	
 </head>
 
 <body>
@@ -24,11 +23,52 @@
 		<h1>Let the Quest Begin!</h1>
 	</header>
 	
+	<div>
+			<i class="fas fa-anchor"></i>
+	</div>
 	
 	<p>Let's find the treasure.</p>
-	<p>Enter your name to personalize the game!</p>
-	<p>Tip: The location of the treasure changes every game!</p>
+	<p><i class="fas fa-user"></i> Enter your name to personalize the game!</p>
+	<p><i class="fas fa-magic"></i> Tip: The location of the treasure changes for every game!</p>
 	
+<!--	Form: Ask player if he/she enjoyed the game-->
+	<form method="get" class="center">
+		<fieldset>
+			<legend>Did you enjoy playing this game?</legend>
+			<label>Heck Yes! I'd play all day if I could!
+				<input type="radio" name="enjoyability" value="Yes">
+			</label><br>
+			<label>Eww no way!
+				<input type="radio" name="enjoyability" value="No">
+			</label>
+		</fieldset>
+	</form>
+	
+<!--	Form: Ask player if they'd recommend the game-->
+	<form method="get" class="center">
+		<fieldset>
+			<legend>Would you recommend other adventurers to play this game?</legend>
+			<label>Yes, all my buds would love it!
+				<input type="radio" name="recommendation" value="Yes">
+			</label><br>
+			<label>Nope!
+				<input type="radio" name="recommendation" value="No">
+			</label><br>
+			<label>Maybe in a different life!
+				<input type="radio" name="recommendation" value="Maybe">
+			</label>
+		</fieldset>
+	</form>
+	
+<!--From: Obtain players comments-->
+	<form method="get" class="center">
+		<h2>Please provide us with feedback on your experiece while playing.</h2>
+		<label>Insert comments below:</label><br>
+		<textarea class="border border-warning" cols="80" rows="10" maxlength="200"></textarea><br>
+		<input class="submit" type="submit" value="Submit">
+	</form>
+	
+<!--	Footer on baseline of the page-->
 	<footer>
 		<audio class="fixed-bottom" controls autoplay loop id="mySound">
 			<source src="media/zompie.mp3" type="audio/mpeg">
@@ -36,6 +76,7 @@
 		</audio>
 	</footer>
 	
+<!--	Link to Javascript Code-->
 		<script src="adventure.js"></script>
 </body>
 

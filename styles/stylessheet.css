@@ -1,5 +1,5 @@
 
-/*This is mainly to target the background image*/
+/*CSS: mainly to target the background image*/
 body {
 	background-image: url(../media/treasure.jpeg);
 	background-repeat: no-repeat;
@@ -7,9 +7,9 @@ body {
 	font-family: 'Berkshire Swash', cursive;
 }
 
+/*CSS for alignment & text color*/
 h1,p {
 	color:  #ffbf00;
-	align-items: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,7 +19,27 @@ p {
 	padding: 3rem;
 }
 
-	/*CSS Animation	*/
+/*CSS ANIMATION: for the anchor icon*/
+.fa-anchor:hover {
+	transition: transform 2s;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+/*CSS for Font Awesome Icon*/
+.fa-anchor {
+	color: #ffbf00;
+	font-size: 4em;
+	width: 100%;
+	margin: auto;
+}
+div,i {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+/*CSS ANIMATION, mainly for the header	*/
 h1 {
 	-webkit-animation-name:header;
 	-webkit-animation-duration: 4s;
@@ -29,6 +49,20 @@ h1 {
 @keyframes header {
 	from {background-color: #cc9900;}
 	to {background-color: #ffd24d;}
+}
+
+/*CSS: for Forms*/
+form {
+	color: #ffbf00;
+	align-content: center;
+	text-align: center;
+}
+.submit {
+	margin-bottom: 8%;
+}
+textarea {
+	margin-bottom: 5%;
+	color: #ffbf00;
 }
 
 /*Audio for background music*/
